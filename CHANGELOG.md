@@ -9,6 +9,10 @@ specification.
 
 ## Unreleased
 
+* Nothing
+
+## [2.0.0] 2021-05-15 
+
 ### Added
 
 * New parameter `keychain_args`.

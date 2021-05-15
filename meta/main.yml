@@ -3,7 +3,7 @@
 galaxy_info:
   role_name: keychain
   author: Tim Schwenke
-  description: Keychain utiltiy including '~/.profile' modification.
+  description: Setup of keychain utility for ssh-agent management
 
   license: MIT
 

@@ -1,0 +1,18 @@
+---
+
+on:
+  push:
+    tags:
+      - "v*"
+    branches:
+      - master
+
+jobs:
+  publish:
+    name: Publish on Ansible Galaxy
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: artis3n/ansible_galaxy_collection@v2
+        with:
+          api_key: '${{ secrets.GALAXY_API_KEY }}'

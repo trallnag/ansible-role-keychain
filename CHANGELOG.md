@@ -9,7 +9,10 @@ specification.
 
 ## Unreleased
 
-* Nothing.
+### Changed
+
+* **BREAKING CHANGE**: Switched default of `login_file` from `~/.bash_profile`
+  to `~/.profile`.
 
 ## [1.0.2] 2021-05-15 
 

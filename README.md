@@ -12,11 +12,11 @@ None.
 
 ## Role Variables
 
-| Name              | Default           | Description                                                                      |
-| ----------------- | ----------------- | -------------------------------------------------------------------------------- |
-| `state`           | `present`         | If keychain should be present or not. Allowed values are `present` and `absent`. |
-| `login_file`      | `~/.bash_profile` | In what file should the init block for keychain be placed?                       |
-| `timeout_minutes` | `60`              | Timeout of keys added to ssh-agent in minutes.                                   |
+| Name              | Default      | Description                                                                      |
+| ----------------- | ------------ | -------------------------------------------------------------------------------- |
+| `state`           | `present`    | If keychain should be present or not. Allowed values are `present` and `absent`. |
+| `login_file`      | `~/.profile` | In what file should the init block for keychain be placed?                       |
+| `timeout_minutes` | `60`         | Timeout of keys added to ssh-agent in minutes.                                   |
 
 ## Dependencies
 

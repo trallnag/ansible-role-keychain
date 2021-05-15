@@ -2,4 +2,4 @@ state: present # Options: 'present', 'absent'.
 
 login_file: ~/.profile # Usually `~/.profile` or `~/.bash_profile`.
 
-timeout_minutes: 60
+keychain_args: "--quick --quiet --timeout 60"

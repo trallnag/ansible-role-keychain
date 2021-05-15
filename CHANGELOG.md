@@ -9,10 +9,15 @@ specification.
 
 ## Unreleased
 
+### Added
+
+* New parameter `keychain_args`.
+
 ### Changed
 
 * **BREAKING CHANGE**: Switched default of `login_file` from `~/.bash_profile`
   to `~/.profile`.
+* **BREAKING CHANGE**: Removed `timeout_minutes`. Replaced with `keychain_args`.
 
 ## [1.0.2] 2021-05-15 
 

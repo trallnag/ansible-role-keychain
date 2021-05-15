@@ -1,5 +1,7 @@
 ---
 
+name: Publish on Ansible Galaxy
+
 on:
   push:
     tags:
@@ -9,10 +11,9 @@ on:
 
 jobs:
   publish:
-    name: Publish on Ansible Galaxy
     runs-on: ubuntu-latest
-
     steps:
-      - uses: artis3n/ansible_galaxy_collection@v2
+      - uses: actions/checkout@v2
+      - uses: robertdebock/galaxy-action@1.1.0
         with:
-          api_key: '${{ secrets.GALAXY_API_KEY }}'
+          galaxy_api_key: ${{ secrets.GALAXY_API_KEY }}

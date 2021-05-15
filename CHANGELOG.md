@@ -9,7 +9,13 @@ specification.
 
 ## Unreleased
 
-- Nothing.
+* Nothing.
+
+## [1.0.1] 2021-05-15 
+
+## Added
+
+* GitHub workflow that creates a GitHub release.
 
 ## [1.0.0] 2021-05-15 
 

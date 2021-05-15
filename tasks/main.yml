@@ -1,0 +1,3 @@
+---
+
+- import_tasks: state-{{ (state | lower) | default('present') }}.yml

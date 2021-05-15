@@ -28,7 +28,7 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          name: "[{{ $env.RELEASE_VERSION }}] ${{ env.NOW }}"
+          name: "[${{ env.RELEASE_VERSION }}] ${{ env.NOW }}"
           body: ${{ steps.extract-release-notes.outputs.release_notes }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

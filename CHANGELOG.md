@@ -11,9 +11,15 @@ specification.
 
 * Nothing.
 
+## [1.0.2] 2021-05-15 
+
+### Changed
+
+* Small improvements and fixes around CI and docs.
+
 ## [1.0.1] 2021-05-15 
 
-## Added
+### Added
 
 * GitHub workflow that creates a GitHub release.
 

@@ -1,5 +1,3 @@
----
-
 - name: Ensure keychain is present
   apt:
     name: keychain

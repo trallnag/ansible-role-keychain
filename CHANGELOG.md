@@ -11,7 +11,19 @@ specification.
 
 * Nothing
 
-## [2.0.0] 2021-05-15 
+## [2.1.0] 2021-05-17
+
+### Added
+
+* Parameter `used_shell` to set the file to be sourced.
+
+### Changed
+
+* Don't run execution of keychain in the background. This can lead to errors in
+  the following source in case the keychain execution is too slow.
+* Switch to handler where possible.
+
+## [2.0.0] 2021-05-15
 
 ### Added
 

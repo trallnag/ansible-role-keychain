@@ -11,5 +11,7 @@
     state: present
     marker: "# {mark} :: ANSIBLE MANAGED BLOCK :: role=trallnag.keychain feead09a-b599-11eb-af8a-00155d2fcd36"
     block: |
-      (/usr/bin/keychain {{ keychain_args }} &)
-      source ~/.keychain/$HOSTNAME-sh
+      /usr/bin/keychain {{ keychain_args }}
+      source ~/.keychain/$HOSTNAME-{{ used_shell }}
+  notify:
+    - handler-source (trallnag.endlessh)

@@ -1,0 +1,5 @@
+- name: handler-source (trallnag.endlessh)
+  shell: |
+    set -o pipefail; source {{ login_file }}
+  args:
+    executable: /bin/bash

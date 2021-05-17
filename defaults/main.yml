@@ -1,5 +1,7 @@
-state: present # Options: 'present', 'absent'.
+state: present # Options: `present`, `absent`.
 
 login_file: ~/.profile # Usually `~/.profile` or `~/.bash_profile`.
 
 keychain_args: "--quick --quiet --timeout 60"
+
+used_shell: sh # Options: `sh`, `fish`, `csh`.

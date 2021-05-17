@@ -1,6 +1,7 @@
-name: Create GitHub Release
+name: Release
 
 on:
+  workflow_dispatch:
   push:
     tags:
       - "*.*.*"

@@ -8,15 +8,17 @@ Available on [Ansible Galaxy](https://galaxy.ansible.com/trallnag/keychain).
 
 ## Requirements
 
-None.
+* Ubuntu only. Only tested on "vanilla" Ubuntu server starting with 20.04.
+* System should be more or less vanilla. Systemd must be used. 
 
 ## Role Variables
 
-| Name            | Default                        | Description                                                                      |
-| --------------- | ------------------------------ | -------------------------------------------------------------------------------- |
-| `state`         | `present`                      | If keychain should be present or not. Allowed values are `present` and `absent`. |
-| `login_file`    | `~/.profile`                   | In what file should the init block for keychain be placed?                       |
-| `keychain_args` | `"--quick --quiet --timeout 60"` | Args passed to keychain                                                          |
+| Name            | Allowed             | Default                          | Description                                                 |
+| --------------- | ------------------- | -------------------------------- | ----------------------------------------------------------- |
+| `state`         | `present`, `absent` | `present`                        | If keychain should be present or not.                       |
+| `login_file`    | Path to file        | `~/.profile`                     | In what file should the init block for keychain be placed?  |
+| `keychain_args` | String              | `"--quick --quiet --timeout 60"` | Args passed to keychain                                     |
+| `used_shell`    | `sh`, `csh`, `fish` | `sh`                             | Set the file that should be sourced containing socket info. |
 
 ## Dependencies
 
@@ -34,6 +36,7 @@ None.
         state: present
         login_file: ~/.bash_profile
         keychain_args: "--quick --quiet --timeout 60"
+        used_shell: sh
 ```
 
 ## License

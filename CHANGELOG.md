@@ -11,6 +11,12 @@ specification.
 
 * Nothing
 
+## [3.0.1] 2021-05-18
+
+## Changed
+
+* Removed empty exceptions file.
+
 ## [3.0.0] 2021-05-18
 
 ## Added

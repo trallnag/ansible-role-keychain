@@ -11,6 +11,18 @@ specification.
 
 * Nothing
 
+## [3.0.0] 2021-05-18
+
+## Added
+
+* Asserts that test all required variables.
+
+## Changed
+
+* Reworked README.
+* Changed license.
+* Changed overall formatting.
+
 ## [2.1.0] 2021-05-17
 
 ### Added

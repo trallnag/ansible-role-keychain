@@ -1,13 +1,19 @@
 galaxy_info:
-  role_name: keychain
   author: Tim Schwenke
-  description: Setup of keychain utility for ssh-agent management
-
-  license: MIT
-
+  namespace: trallnag
+  role_name: keychain
+  description: Install and configure Keychain ssh-agent mgmt utility on your Ubuntu system.
+  license: Apache-2.0
+  company: none
   min_ansible_version: 2.3
 
   platforms:
     - name: Ubuntu
       versions:
-        - all
+        - focal
+        - bionic
+
+galaxy_tags:
+  - ssh
+
+dependencies: []

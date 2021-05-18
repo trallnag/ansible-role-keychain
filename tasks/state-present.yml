@@ -4,7 +4,7 @@
     state: present
   become: true
 
-- name: Ensure init block is present in '{{ login_file }}'
+- name: Ensure init block is present in `{{ login_file }}`
   blockinfile:
     path: "{{ login_file }}"
     insertafter: EOF
@@ -15,3 +15,8 @@
       source ~/.keychain/$HOSTNAME-{{ used_shell }}
   notify:
     - handler-source (trallnag.endlessh)
+
+- name: Ensure `~/.keychain/` is present
+  file:
+    state: directory
+    path: ~/.keychain/

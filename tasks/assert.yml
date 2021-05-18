@@ -1,0 +1,28 @@
+- name: Test if `state` is set correctly
+  assert:
+    that:
+      - state is defined
+      - state is string
+      - state in [ "present", "absent" ]
+    quiet: true
+
+- name: Test if `login_file` is set correctly
+  assert:
+    that:
+      - login_file is defined
+      - login_file is string
+    quiet: true
+
+- name: Test if `keychain_args` is set correctly
+  assert:
+    that:
+      - keychain_args is defined
+      - keychain_args is string
+    quiet: true
+
+- name: Test if `used_shell` is set correctly
+  assert:
+    that:
+      - used_shell is defined
+      - used_shell is string
+    quiet: true

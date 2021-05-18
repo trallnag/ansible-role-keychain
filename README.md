@@ -1,33 +1,36 @@
+[![role](https://img.shields.io/ansible/role/54857)](https://galaxy.ansible.com/trallnag/keychain)
+[![quality](https://img.shields.io/ansible/quality/54857)](https://galaxy.ansible.com/trallnag/keychain)
+[![downloads](https://img.shields.io/ansible/role/d/54857?label=downloads)](https://galaxy.ansible.com/trallnag/keychain)
+
 # Keychain
 
-Keychain for managing ssh-agent. Installs APT package and adds block to login
-script file. Allows modification via variables. Can be set to `present` and
-`absent` and therefore supports deinstallation.
+Install and configure Keychain ssh-agent mgmt utility on your Ubuntu system.
 
 Available on [Ansible Galaxy](https://galaxy.ansible.com/trallnag/keychain).
 
-## Requirements
-
-* Ubuntu only. Only tested on "vanilla" Ubuntu server starting with 20.04.
-* System should be more or less vanilla. Systemd must be used. 
-
 ## Role Variables
 
-| Name            | Allowed             | Default                          | Description                                                 |
-| --------------- | ------------------- | -------------------------------- | ----------------------------------------------------------- |
-| `state`         | `present`, `absent` | `present`                        | If keychain should be present or not.                       |
-| `login_file`    | Path to file        | `~/.profile`                     | In what file should the init block for keychain be placed?  |
-| `keychain_args` | String              | `"--quick --quiet --timeout 60"` | Args passed to keychain                                     |
-| `used_shell`    | `sh`, `csh`, `fish` | `sh`                             | Set the file that should be sourced containing socket info. |
+```yaml
+# Choose from "present", "absent".
+state: present
 
-## Dependencies
+# Path to the profile config script where the keychain init script is located.
+# Usually "~/.profile" or "~/.bash_profile".
+login_file: ~/.profile
 
-None.
+# Arguments for keychain executable.
+keychain_args: "--quick --quiet --timeout 60"
+
+# Depending on this different files are sourced in the profile config scrip
+# init block.
+# Choose from "sh", "fish", "csh".
+used_shell: sh
+```
 
 ## Example Playbook
 
 ```yaml
-- name: "Example"
+- name: Playbook
   hosts: myhost
   remote_user: myuser
   roles:
@@ -39,6 +42,19 @@ None.
         used_shell: sh
 ```
 
+## Special Requirements
+
+None.
+
+## Special Dependencies
+
+None.
+
 ## License
 
-MIT
+Apache-2.0
+
+## Author Information
+
+Trallnag
+

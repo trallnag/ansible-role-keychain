@@ -1,7 +1,14 @@
-state: present # Options: `present`, `absent`.
+# Choose from "present", "absent".
+state: present
 
-login_file: ~/.profile # Usually `~/.profile` or `~/.bash_profile`.
+# Path to the profile config script where the keychain init script is located.
+# Usually "~/.profile" or "~/.bash_profile".
+login_file: ~/.profile
 
+# Arguments for keychain executable.
 keychain_args: "--quick --quiet --timeout 60"
 
-used_shell: sh # Options: `sh`, `fish`, `csh`.
+# Depending on this different files are sourced in the profile config scrip
+# init block.
+# Choose from "sh", "fish", "csh".
+used_shell: sh

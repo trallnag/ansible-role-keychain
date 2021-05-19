@@ -11,6 +11,12 @@ specification.
 
 * Nothing
 
+## [5.0.1] 2021-05-19
+
+### Fixed
+
+* Indent `galaxy_tags` tag leading to error.
+
 ## [5.0.0] 2021-05-19
 
 ### Added

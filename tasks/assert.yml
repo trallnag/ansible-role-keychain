@@ -1,11 +1,3 @@
-- name: Test if `state` is set correctly
-  assert:
-    that:
-      - state is defined
-      - state is string
-      - state in [ "present", "absent" ]
-    quiet: true
-
 - name: Test if `login_file` is set correctly
   assert:
     that:

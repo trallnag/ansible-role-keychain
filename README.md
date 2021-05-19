@@ -11,9 +11,6 @@ Available on [Ansible Galaxy](https://galaxy.ansible.com/trallnag/keychain).
 ## Role Variables
 
 ```yaml
-# Choose from "present", "absent".
-state: present
-
 # Path to the profile config script where the keychain init script is located.
 # Usually "~/.profile" or "~/.bash_profile".
 login_file: ~/.profile
@@ -36,7 +33,6 @@ used_shell: sh
   roles:
     - name: trallnag.keychain
       vars:
-        state: present
         login_file: ~/.bash_profile
         keychain_args: "--quick --quiet --timeout 60"
         used_shell: sh
@@ -57,4 +53,3 @@ Apache-2.0
 ## Author Information
 
 Trallnag
-

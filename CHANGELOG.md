@@ -9,7 +9,9 @@ specification.
 
 ## Unreleased
 
-* Nothing
+## Changed
+
+* **BREAKING CHANGE**: Removed `absent` feature.
 
 ## [3.0.1] 2021-05-18
 

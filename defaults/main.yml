@@ -1,6 +1,3 @@
-# Choose from "present", "absent".
-state: present
-
 # Path to the profile config script where the keychain init script is located.
 # Usually "~/.profile" or "~/.bash_profile".
 login_file: ~/.profile

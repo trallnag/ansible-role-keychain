@@ -4,7 +4,7 @@
 
 # Keychain
 
-Install and configure Keychain ssh-agent mgmt utility on your Ubuntu system.
+Install and configure Keychain ssh-agent mgmt utility.
 
 Available on [Ansible Galaxy](https://galaxy.ansible.com/trallnag/keychain).
 

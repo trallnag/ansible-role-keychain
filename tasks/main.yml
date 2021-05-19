@@ -4,15 +4,15 @@
     state: present
   become: true
 
-- name: Ensure init block is present in `{{ login_file }}`
+- name: Ensure init block is present in `{{ keychain_login_file }}`
   blockinfile:
-    path: "{{ login_file }}"
+    path: "{{ keychain_login_file }}"
     insertafter: EOF
     state: present
     marker: "# {mark} :: ANSIBLE MANAGED BLOCK :: role=trallnag.keychain feead09a-b599-11eb-af8a-00155d2fcd36"
     block: |
       /usr/bin/keychain {{ keychain_args }}
-      source ~/.keychain/$HOSTNAME-{{ used_shell }}
+      source ~/.keychain/$HOSTNAME-{{ keychain_used_shell }}
   notify:
     - handler-source (trallnag.endlessh)
 

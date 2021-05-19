@@ -1,5 +1,5 @@
 - name: handler-source (trallnag.endlessh)
   shell: |
-    set -o pipefail; source {{ login_file }}
+    set -o pipefail; source {{ keychain_login_file }}
   args:
     executable: /bin/bash

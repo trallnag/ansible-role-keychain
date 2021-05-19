@@ -13,7 +13,7 @@ Available on [Ansible Galaxy](https://galaxy.ansible.com/trallnag/keychain).
 ```yaml
 # Path to the profile config script where the keychain init script is located.
 # Usually "~/.profile" or "~/.bash_profile".
-login_file: ~/.profile
+keychain_login_file: ~/.profile
 
 # Arguments for keychain executable.
 keychain_args: "--quick --quiet --timeout 60"
@@ -21,7 +21,7 @@ keychain_args: "--quick --quiet --timeout 60"
 # Depending on this different files are sourced in the profile config scrip
 # init block.
 # Choose from "sh", "fish", "csh".
-used_shell: sh
+keychain_used_shell: sh
 ```
 
 ## Example Playbook
@@ -33,9 +33,9 @@ used_shell: sh
   roles:
     - name: trallnag.keychain
       vars:
-        login_file: ~/.bash_profile
+        keychain_login_file: ~/.bash_profile
         keychain_args: "--quick --quiet --timeout 60"
-        used_shell: sh
+        keychain_used_shell: sh
 ```
 
 ## Special Requirements

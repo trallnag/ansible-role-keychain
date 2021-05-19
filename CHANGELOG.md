@@ -9,9 +9,17 @@ specification.
 
 ## Unreleased
 
+* Nothing
+
+## [5.0.0] 2021-05-19
+
 ### Added
 
 * More supported platforms and versions.
+
+### Changed
+
+* **BREAKING CHANGE**: Prefix all variables with `keychain_`.
 
 ## [4.0.0] 2021-05-19
 
@@ -45,7 +53,7 @@ specification.
 
 ### Added
 
-* Parameter `used_shell` to set the file to be sourced.
+* Parameter `keychain_used_shell` to set the file to be sourced.
 
 ### Changed
 
@@ -61,7 +69,7 @@ specification.
 
 ### Changed
 
-* **BREAKING CHANGE**: Switched default of `login_file` from `~/.bash_profile`
+* **BREAKING CHANGE**: Switched default of `keychain_login_file` from `~/.bash_profile`
   to `~/.profile`.
 * **BREAKING CHANGE**: Removed `timeout_minutes`. Replaced with `keychain_args`.
 

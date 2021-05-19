@@ -9,6 +9,10 @@ specification.
 
 ## Unreleased
 
+## Added
+
+* Support for other OS systems by switching from apt to package module.
+
 ## Changed
 
 * **BREAKING CHANGE**: Removed `absent` feature.

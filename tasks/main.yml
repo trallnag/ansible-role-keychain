@@ -1,5 +1,5 @@
 - name: Ensure keychain is present
-  apt:
+  package:
     name: keychain
     state: present
   become: true

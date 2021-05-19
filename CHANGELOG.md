@@ -11,6 +11,12 @@ specification.
 
 * Nothing
 
+## [5.0.2] 2021-05-19
+
+### Fixed
+
+* Missing import of `assert.yml`.
+
 ## [5.0.1] 2021-05-19
 
 ### Fixed

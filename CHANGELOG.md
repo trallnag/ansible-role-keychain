@@ -9,31 +9,33 @@ specification.
 
 ## Unreleased
 
-* Nothing
+### Added
+
+* More supported platforms and versions.
 
 ## [4.0.0] 2021-05-19
 
-## Added
+### Added
 
 * Support for other OS systems by switching from apt to package module.
 
-## Changed
+### Changed
 
 * **BREAKING CHANGE**: Removed `absent` feature.
 
 ## [3.0.1] 2021-05-18
 
-## Changed
+### Changed
 
 * Removed empty exceptions file.
 
 ## [3.0.0] 2021-05-18
 
-## Added
+### Added
 
 * Asserts that test all required variables.
 
-## Changed
+### Changed
 
 * Reworked README.
 * Changed license.

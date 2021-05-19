@@ -9,6 +9,10 @@ specification.
 
 ## Unreleased
 
+* Nothing
+
+## [4.0.0] 2021-05-19
+
 ## Added
 
 * Support for other OS systems by switching from apt to package module.

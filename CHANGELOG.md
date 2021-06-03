@@ -11,6 +11,12 @@ specification.
 
 * Nothing
 
+## [5.0.4] 2021-06-03
+
+### Fixed
+
+* Incorrect type in `argument_specs.yml`. Must be `str` and not `string`. 
+
 ## [5.0.3] 2021-06-03
 
 ### Changed

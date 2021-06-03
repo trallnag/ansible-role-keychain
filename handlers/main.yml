@@ -1,3 +1,4 @@
+---
 - name: Source keychain login file
   shell: |
     set -o pipefail; source {{ keychain_login_file }}

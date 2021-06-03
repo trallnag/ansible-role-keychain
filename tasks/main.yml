@@ -1,3 +1,4 @@
+---
 - name: Ensure keychain is present
   package:
     name: keychain

@@ -14,7 +14,7 @@
       /usr/bin/keychain {{ keychain_args }}
       source ~/.keychain/$HOSTNAME-{{ keychain_used_shell }}
   notify:
-    - handler-source (trallnag.endlessh)
+    - "{{ role_name }} : Source keychain login file"
 
 - name: Ensure `~/.keychain/` is present
   file:

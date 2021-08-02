@@ -1,4 +1,4 @@
 - name: Start keychain
   shell: |
     /usr/bin/keychain {{ keychain_args }}
-    . ~/.keychain/$HOSTNAME-{{ keychain_used_shell }}
+    . ~/.keychain/*-{{ keychain_used_shell }}

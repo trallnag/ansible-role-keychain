@@ -11,6 +11,12 @@ specification.
 
 * Nothing.
 
+## [6.0.1] 2021-08-02
+
+### Fixed
+
+* Wrong sourcing.
+
 ## [6.0.0] 2021-08-02
 
 ### Changed

@@ -4,7 +4,7 @@
     state: present
   become: true
 
-- name: Create `~/.keychain/`
+- name: Create '~/.keychain/'
   file:
     state: directory
     path: ~/.keychain/
@@ -17,6 +17,6 @@
     marker: "# {mark} :: ANSIBLE MANAGED BLOCK :: {{ role_name }}"
     block: |
       /usr/bin/keychain {{ keychain_args }}
-      . ~/.keychain/$HOSTNAME-{{ keychain_used_shell }}
+      . ~/.keychain/*-{{ keychain_used_shell }}
   notify:
     - "{{ role_name }} : Start keychain"

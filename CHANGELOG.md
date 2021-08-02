@@ -9,10 +9,15 @@ specification.
 
 ## Unreleased
 
+* Nothing.
+
+## [6.0.0] 2021-08-02
+
 ### Changed
 
 * **BREAKING**: Changed marker in the `keychain_login_file`. Please remove the
-  old entry starting and ending with `role=trallnag.keychain`. 
+  old entry starting and ending with `role=trallnag.keychain`.
+* Improved docs.
 
 ## [5.0.4] 2021-06-03
 
@@ -118,7 +123,3 @@ specification.
 ## [1.0.0] 2021-05-15 
 
 * Intial release.
-
-## Unreleased
-
-* Nothing

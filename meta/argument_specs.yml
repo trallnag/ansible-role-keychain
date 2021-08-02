@@ -1,7 +1,6 @@
----
 argument_specs:
   main:
-    short_description: The main entry point for the "{{ role_name }}" role.
+    short_description: Main entry point
     options:
       keychain_login_file:
         type: str

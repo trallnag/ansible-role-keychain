@@ -2,9 +2,11 @@
 [![quality](https://img.shields.io/ansible/quality/54857)](https://galaxy.ansible.com/trallnag/keychain)
 [![downloads](https://img.shields.io/ansible/role/d/54857?label=downloads)](https://galaxy.ansible.com/trallnag/keychain)
 
-# Keychain
+# Ansible Role `trallnag.keychain`
 
-Install and configure Keychain ssh-agent mgmt utility.
+Ansible role that installs and configures the [Keychain][keychain] ssh-agent mgmt utility.
+
+[keychain]: https://github.com/funtoo/keychain
 
 Available on [Ansible Galaxy](https://galaxy.ansible.com/trallnag/keychain).
 
@@ -26,6 +28,7 @@ options:
     default: --quick --quiet --timeout 60
     description: >-
       Arguments for keychain executable.
+  
   keychain_used_shell:
     type: string
     required: false

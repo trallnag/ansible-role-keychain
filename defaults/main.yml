@@ -1,11 +1,3 @@
-# Path to the profile config script where the keychain init script is located.
-# Usually "~/.profile" or "~/.bash_profile".
 keychain_login_file: ~/.profile
-
-# Arguments for keychain executable.
 keychain_args: "--quick --quiet --timeout 60"
-
-# Depending on this different files are sourced in the profile config scrip
-# init block.
-# Choose from "sh", "fish", "csh".
 keychain_used_shell: sh

@@ -1,6 +1,4 @@
----
-- name: Source keychain login file
+- name: Start keychain
   shell: |
-    set -o pipefail; source {{ keychain_login_file }}
-  args:
-    executable: /bin/bash
+    /usr/bin/keychain {{ keychain_args }}
+    . ~/.keychain/$HOSTNAME-{{ keychain_used_shell }}
